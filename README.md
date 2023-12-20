@@ -1,3 +1,7 @@
+## lamodoro timer
+
+spielt eine zufällige episode digimon jedes mal ab, wenn der timer zu ende ist. 
+
 ## python scraper
 
 der scraper looped durch staffel 1 bis 2 und episode 1 bis 49 
