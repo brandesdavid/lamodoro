@@ -1,4 +1,18 @@
+## python scraper
 
+der scraper looped durch staffel 1 bis 2 und episode 1 bis 49 
+auf der webseite, und speichert das einfach in eine json. das programm ruft die json datei auf und 
+wählt zufällig eine url.
+
+(externes tool eigentlich, pack danach die json datei in den src/components ordner)
+du kannst es builden in dem du ```npm run package``` in der konsole aufrufst.
+
+
+
+```bash
+python3 digimon.py
+
+```
 
 ## Install
 
