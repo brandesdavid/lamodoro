@@ -54,17 +54,17 @@ export default class MenuBuilder {
 
   buildDarwinTemplate(): MenuItemConstructorOptions[] {
     const subMenuAbout: DarwinMenuItemConstructorOptions = {
-      label: 'Electron',
+      label: 'lamodoro timer',
       submenu: [
         {
-          label: 'About ElectronReact',
+          label: 'lamodoro timer',
           selector: 'orderFrontStandardAboutPanel:',
         },
         { type: 'separator' },
         { label: 'Services', submenu: [] },
         { type: 'separator' },
         {
-          label: 'Hide ElectronReact',
+          label: 'hide lamodoro timer',
           accelerator: 'Command+H',
           selector: 'hide:',
         },

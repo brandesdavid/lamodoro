@@ -71,8 +71,11 @@ const createWindow = async () => {
 
   mainWindow = new BrowserWindow({
     show: false,
-    width: 1024,
-    height: 728,
+    width: 384,
+    height: 256,
+
+    resizable: false,
+
     icon: getAssetPath('icon.png'),
     webPreferences: {
       preload: app.isPackaged
@@ -107,9 +110,9 @@ const createWindow = async () => {
     return { action: 'deny' };
   });
 
-  // Remove this if your app does not use auto updates
-  // eslint-disable-next-line
-  new AppUpdater();
+  // // Remove this if your app does not use auto updates
+  // // eslint-disable-next-line
+  // new AppUpdater();
 };
 
 /**

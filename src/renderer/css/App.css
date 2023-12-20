@@ -2,23 +2,57 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
+
 body {
   position: relative;
   color: white;
   height: 100vh;
-  background: linear-gradient(
-    200.96deg,
-    #fedc2a -29.09%,
-    #dd5789 51.77%,
-    #7a2c9e 129.35%
-  );
-  font-family: sans-serif;
+
+  /*  */
   overflow-y: hidden;
-  display: flex;
+
   justify-content: center;
   align-items: center;
+
+  display: flex;
+  margin: 0 0 !important
+
+}
+.timer-grid{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.timer-display-container {
+  display: flex;
+  max-width: 20rem;
+}
+.timer-display {
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
 }
 
+.timer-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Drei Spalten für die Buttons */
+  justify-items: center; /* Zentriert die Buttons in ihren jeweiligen Spalten */
+  align-items: center;
+  width: 100%; /* Breite auf 100% setzen, damit die Buttons den gesamten verfügbaren Platz einnehmen */
+  max-width: fit-content;
+  margin-top: 0.5rem;
+}
+
+
+.settings-display-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Drei Spalten für die Buttons */
+
+}
+/*
 button {
   background-color: white;
   padding: 10px 20px;
@@ -59,4 +93,4 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: 20px 0;
-}
+} */
